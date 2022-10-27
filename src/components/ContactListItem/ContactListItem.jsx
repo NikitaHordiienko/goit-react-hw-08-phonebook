@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/contactsThunks/contactsOperations';
+import { deleteContact } from 'redux/contacts/contactsThunks/contactsOperations';
 import css from './ContactListItem.module.css';
 
 const ContactListItem = ({ contact }) => {
@@ -10,7 +10,7 @@ const ContactListItem = ({ contact }) => {
         <li key={contact.id} >
             <div className={css.item}>
                 <p className={css.text}>{contact.name}:</p>
-                <a className={css.phone} href={"tell:" + contact.phone}>{contact.phone}</a>
+                <a className={css.phone} href={"tell:" + contact.number}>{contact.number}</a>
                 <button
                     className={css.button}
                     type="button"
