@@ -2,18 +2,25 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    position: relative;
 }
 
 .text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 15px;
+    color: #2f3131;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .phone {
     font-size: 15px;
     font-weight: 500;
+    font-size: 18px;
+    color: #2f3131;
     text-decoration: none;
 }
 
@@ -21,12 +28,17 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: #fff;
-    border: 1px solid #2196F3;
-    border-radius: 4px;
+    color: #f8f1e5;
+    padding: 3px;
+    font-size: 18px;
+    background-color: #2f3131;
+    border: 1px solid #2f3131;
+    border-radius: 100%;
     cursor: pointer;
 }
 
 .button:hover {
-    background-color: #2196F3;
+    background-color: #f9ba32;
+    border: 1px solid #f9ba32;
+    color: #2f3131;
 }

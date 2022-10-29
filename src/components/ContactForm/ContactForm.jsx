@@ -1,10 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
+import { toast } from "react-toastify";
 import { addContact } from "redux/contacts/contactsThunks/contactsOperations";
-import css from './ContactForm.module.css';
 import { selectContacts } from "redux/contacts/contactsSelectors";
+import css from './ContactForm.module.css';
 
 export default function ContactForm() {
-
     const dispatch = useDispatch();
     const contacts = useSelector(selectContacts);
     
@@ -19,8 +19,8 @@ export default function ContactForm() {
             contact.name === name
         );
 
-        if (existingContact) {      
-            alert(`${name} is already in contacts`)
+        if (existingContact) {   
+            toast.error(`${name} is already in contacts`)
             form.reset();
             return 
         }
@@ -31,25 +31,30 @@ export default function ContactForm() {
     }    
 
     return (
-        <form className={css.form} onSubmit={handleSubmit}>
-            <label className={css.formLabel} htmlFor="name">Name</label>
-            <input
-                className={css.formInput}
+        
+        <form className={css.cardForm} autoComplete="off" onSubmit={handleSubmit}>
+            <div className={css.input}>
+                <input
+                className={css.inputField}
                 type="text"
                 name="name"
                 pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
                 title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
                 required
-            />
-            <label className={css.formLabel} htmlFor="number">Number</label>
-            <input
-                className={css.formInput}
+                />
+                <label className={css.inputLabel} htmlFor="name">Name</label>
+            </div>
+            <div className={css.input}>
+                <input
+                className={css.inputField}
                 type="tel"
                 name="number"
                 pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
                 title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
                 required
-            />
+                />
+                <label className={css.inputLabel} htmlFor="number">Number</label>
+            </div>            
             <button className={css.formButton} type="submit">Add contact</button>
         </form>
     )

@@ -2,9 +2,9 @@ import css from './HomePage.module.css'
 
 const HomePage = () => {
     return (
-    <div className={css.container}>
+    <div>
       <h1 className={css.title}>
-        Save your contacts here
+        Manage your contacts on our website
       </h1>
     </div>
   );
