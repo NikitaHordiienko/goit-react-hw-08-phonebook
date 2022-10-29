@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/674.e08d7e15.chunk.css","mappings":"AAAA,uBACI,aAAc,CAGd,YAAa,CADb,eAAgB,CADhB,gBAAiB,CAGjB,iBACJ","sources":["pages/HomePage/HomePage.module.css"],"sourcesContent":[".title {\n    color: #2f3131;\n    margin-top: 100px;\n    font-weight: 500;\n    font-size: 48;\n    text-align: center;\n}\n"],"names":[],"sourceRoot":""}

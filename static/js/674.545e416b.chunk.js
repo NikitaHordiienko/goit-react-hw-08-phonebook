@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[674],{8674:function(e,t,n){n.r(t),n.d(t,{default:function(){return c}});var r="HomePage_title__UFLA3",a=n(3329),c=function(){return(0,a.jsx)("div",{children:(0,a.jsx)("h1",{className:r,children:"Manage your contacts on our website"})})}}}]);
+//# sourceMappingURL=674.545e416b.chunk.js.map

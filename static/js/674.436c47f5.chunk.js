@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[674],{674:function(e,t,a){a.r(t),a.d(t,{default:function(){return u}});var r="HomePage_container__uNu-e",c="HomePage_title__UFLA3",n=a(329),u=function(){return(0,n.jsx)("div",{className:r,children:(0,n.jsx)("h1",{className:c,children:"Save your contacts here"})})}}}]);
-//# sourceMappingURL=674.436c47f5.chunk.js.map
