@@ -20,7 +20,7 @@ export default function RegisterForm() {
             email: form.elements.email.value,
             password: form.elements.password.value,
         }))
-        form.reset();
+
     }
 
     return (
@@ -34,7 +34,7 @@ export default function RegisterForm() {
 				    <label className={css.inputLabel}>Name</label>
 			    </div>
 				<div className={css.input}>
-				    <input type="email" name="email" className={css.inputField}  required/>
+				    <input type="text" name="email" className={css.inputField}  required/>
 				    <label className={css.inputLabel}>Email</label>
 			    </div>
 				<div className={css.input}>

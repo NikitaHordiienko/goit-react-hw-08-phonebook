@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { MdPermContactCalendar, MdDelete, MdEdit } from "react-icons/md";
-import { deleteContact } from 'redux/contacts/contactsThunks/contactsOperations';
+import { deleteContact } from 'redux/contacts/contactsThunks';
 import EditContactModale from 'components/EditContactModal/EditContactModal';
 import css from './ContactListItem.module.css';
 

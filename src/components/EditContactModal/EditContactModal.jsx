@@ -4,7 +4,7 @@ import { createPortal } from "react-dom";
 import { IoClose } from "react-icons/io5";
 import { toast } from "react-toastify";
 import PropTypes from 'prop-types';
-import { editContact } from "redux/contacts/contactsThunks/contactsOperations";
+import { editContact } from "redux/contacts/contactsThunks";
 import { selectContacts } from "redux/contacts/contactsSelectors";
 import css from './EditContactModal.module.css';
 

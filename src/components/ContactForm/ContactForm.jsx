@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
-import { addContact } from "redux/contacts/contactsThunks/contactsOperations";
+import { addContact } from "redux/contacts/contactsThunks";
 import { selectContacts } from "redux/contacts/contactsSelectors";
 import css from './ContactForm.module.css';
 

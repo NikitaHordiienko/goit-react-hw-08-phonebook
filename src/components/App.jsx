@@ -36,7 +36,7 @@ export default function App() {
             <Route path="*" element={<HomePage />} />
           </Routes>
         </Suspense>
-        <ToastContainer autoClose={1500} theme="colored" />
+        <ToastContainer autoClose={3000} theme="colored" />
       </>
   );
 }

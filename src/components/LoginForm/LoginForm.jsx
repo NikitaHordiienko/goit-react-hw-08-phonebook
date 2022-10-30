@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { BiShow, BiHide  } from "react-icons/bi";
+import { BiShow, BiHide } from "react-icons/bi";
 import { logIn } from 'redux/auth/authThunks';
 import css from './LoginForm.module.css';
 
@@ -19,7 +19,7 @@ export default function LoginForm() {
             email: form.elements.email.value,
             password: form.elements.password.value,
         }))
-        form.reset();
+
     }
 
     return (
@@ -30,7 +30,7 @@ export default function LoginForm() {
 			</h2>
 		    <form className={css.cardForm} autoComplete="off" onSubmit={handleSubmit}>
 				<div className={css.input}>
-				    <input type="email" name="email" className={css.inputField}  required/>
+				    <input type="text" name="email" className={css.inputField}  required/>
 				    <label className={css.inputLabel}>Email</label>
 			    </div>
 				<div className={css.input}>

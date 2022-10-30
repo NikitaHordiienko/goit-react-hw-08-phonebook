@@ -1,7 +1,7 @@
 import { useEffect} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectError, selectIsLoading } from "redux/contacts/contactsSelectors";
-import { fetchContacts } from "redux/contacts/contactsThunks/contactsOperations";
+import { fetchContacts } from "redux/contacts/contactsThunks";
 import Loader from "components/Loader/Loader";
 import css from './Contacts.module.css';
 
